@@ -1,0 +1,22 @@
+.storeHeading
+{
+    margin-top:6%;
+    margin-bottom:1%;
+}
+.storeContent
+{
+    margin-bottom: 5%;
+}
+.storePrice
+{
+    margin-left:4%;
+    font-size:20px;
+    color:#ffffff;
+    vertical-align: middle;
+    font-family: 'gilroy';
+}
+.title
+{
+    font-size:60px !important;
+    line-height: 1;
+}

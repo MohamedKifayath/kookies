@@ -27,7 +27,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/jquery-3.5.1.min.js",
+              "node_modules/jquery/dist/jquery.js",
               "src/assets/js/bootstrap.bundle.min.js",
               "src/assets/js/jquery.nice-select.min.js",
               "src/assets/js/lightcase.js",

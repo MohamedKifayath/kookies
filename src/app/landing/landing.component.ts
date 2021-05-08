@@ -38,8 +38,15 @@ export class LandingComponent implements OnInit {
   {
     let userName = this.loginForm.get('userName').value;
     let passWord = this.loginForm.get('passWord').value;
-    sessionStorage.setItem("x-auth",userName);
-    this.router.navigate( ["dashboard"] );
+    if(userName== 'test@gmail.com' && passWord == 'test')
+    {
+      sessionStorage.setItem("x-auth",userName);
+      this.router.navigate( ["dashboard"] );
+    }
+    else
+    {
+      alert("Email id and password mismatch");
+    }
   }
 
 

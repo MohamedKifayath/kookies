@@ -11,5 +11,7 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $.getScript('assets/js/app.js');
+    window.scrollTo(0, 0);
   }
 }
