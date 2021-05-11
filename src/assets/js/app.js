@@ -1,7 +1,8 @@
 (function($){
   "use strict";
 
-  $(window).on('load', function(){
+  // $(window).on('load', function()
+  {
 
      //preloader
      $(".preloader").delay(300).animate({
@@ -242,7 +243,8 @@ testiSlider();
         }
       ]
     });
-  });
+  }
+  // );
 
   $(window).on("scroll", function() {
     if ($(this).scrollTop() > 200) {

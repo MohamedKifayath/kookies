@@ -10,6 +10,7 @@ import { AuthGuard } from './_guard/auth.guard';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StoreComponent } from './components/store/store.component';
+import { NftComponent } from './components/nft/nft.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { StoreComponent } from './components/store/store.component';
     LandingComponent,
     HomepageComponent,
     FooterComponent,
-    StoreComponent
+    StoreComponent,
+    NftComponent
   ],
   imports: [
     BrowserModule,

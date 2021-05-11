@@ -1,0 +1,40 @@
+.heading
+{
+    font-size:20px;
+    font-family: 'Gilroy';
+    color: #ffffff;
+    margin-left: 1%;
+}
+.scroll
+{
+    overflow-x: scroll;
+}
+.fontColor{
+    color: #000000;
+    font-family: 'Gilroy';
+}
+.rightContent{
+    float:right;
+}
+.top{
+    margin-top:5%;
+}
+.marginBottom{
+    margin-bottom: 2%;
+}
+.bottom{
+    margin-bottom: 2%;
+    background-color: inherit;
+    border-color: #ffffff;
+    color:#ffffff;
+}
+.description
+{
+    display: block;
+}
+@media only screen and (max-width: 600px) {
+    .description
+    {
+        display: none !important;
+    }
+}
