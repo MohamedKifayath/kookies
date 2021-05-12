@@ -11,6 +11,8 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StoreComponent } from './components/store/store.component';
 import { NftComponent } from './components/nft/nft.component';
+import { GamesComponent } from './components/games/games.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { NftComponent } from './components/nft/nft.component';
     HomepageComponent,
     FooterComponent,
     StoreComponent,
-    NftComponent
+    NftComponent,
+    GamesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-		ReactiveFormsModule
+    ReactiveFormsModule,
+    OwlModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
