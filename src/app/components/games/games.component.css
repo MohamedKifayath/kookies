@@ -106,4 +106,83 @@
   .nav-pills {
     text-align: center;
   }
-  
+  .slide-text{
+    display: none;
+  }
+  .item:hover .slide-text{
+    display: block;
+    margin-top:8%;
+    margin-left: 30%;
+  }
+  .slide-text a
+  {
+    background-color: #ffffff;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    color: #544590;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 0px 10px 9px 0px rgb(26 15 63 / 26%);
+    padding: 11px 27px;
+  }
+  .card{
+    width: 50%;
+    margin: 0 auto 100px;
+    background-color: #060a35;
+    border-radius: 40px;
+    border-color: #fff;
+  }
+  .card .footer {
+    margin-top : 40px;
+    margin-right:20px;
+    /* color: #d3d3d3; */
+    font-size: 24px;
+    font-weight: 300;
+    text-align: right;
+  }
+  .card .footer a {
+    color: #fff;
+    text-decoration: uppercase;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    font-size: 14px;
+    margin-right: 4%;
+    margin-bottom: 4%;
+  }
+  .card .footer a:hover {
+    color: #f3565d;
+  }
+  .button a
+  {
+    background-color: #ffffff;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    /* color: #544590; */
+    text-transform: uppercase;
+    font-size: 16px;
+    /* box-shadow: 0px 10px 9px 0px rgb(26 15 63 / 26%); */
+    padding: 11px 27px;
+    margin-top: 20%;
+    margin-left: 7%;
+  }
+  .nav-item{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+  }
+  .modal
+  {
+    top:40%!important;
+  }
+  .mygameTitle{
+    font-size: 32px;
+    padding-top: 4%;
+    color: #fff;
+    text-align: center;
+  }

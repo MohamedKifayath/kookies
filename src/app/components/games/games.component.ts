@@ -7,9 +7,24 @@ import * as $ from 'jquery';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
-
-  constructor() { }
-
+  showModal: boolean;
+  gameUrl : string;
+  gameName : string;
+  constructor() { 
+    this.gameUrl = '';
+    this.gameName = '';
+  }
+  show(url,name)
+  {
+    this.showModal = true; // Show-Hide Modal Check
+    this.gameUrl = url;
+    this.gameName = name;
+  }
+  //Bootstrap Modal Close event
+  hide()
+  {
+    this.showModal = false;
+  }
   ngOnInit(): void {
     $.getScript('assets/js/app.js');
     window.scrollTo(0, 0);
@@ -24,62 +39,62 @@ export class GamesComponent implements OnInit {
       0: {
         items: 1,
         nav: true,
-        loop:true
+        loop:false
       },
       600: {
         items: 1,
         nav: true,
-        loop:true
+        loop:false
       },
       1000: {
         items: 4,
         nav: true,
-        loop: true,
+        loop: false,
       },
       1500: {
         items: 4,
         nav: true,
-        loop: true
+        loop: false
       }
     }
   }
 
-  images = [
+  allGames = [
     {
-      text: "Everfresh Flowers",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/1.jpg"
+      text: "https://tracker.gg/",
+      image: "assets/images/games/Valorant-1.jpg"
     },
     {
-      text: "Festive Deer",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/2.jpg"
+      text: "https://tracker.gg/",
+      image: "assets/images/games/COD-1.jpg"
     },
     {
-      text: "Morning Greens",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/3.jpg"
+      text: "https://tracker.gg/",
+      image: "assets/images/games/Battlefield-1.jpg"
     },
     {
-      text: "Bunch of Love",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/4.jpg"
+      text: "https://tracker.gg/",
+      image: "assets/images/games/Apex-legends.jpg"
     },
     {
-      text: "Blue Clear",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/5.jpg"
+      text: "https://tracker.gg/",
+      image: "assets/images/games/Destiny.jpg"
     },
     {
-      text: "Evening Clouds",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/7.jpg"
+      text: "https://tracker.gg/",
+      image: "assets/images/games/Fortnite.jpg"
+    }
+  ]
+  myGames = [
+    {
+      url: "https://tracker.gg/valorant/",
+      image: "assets/images/games/Valorant-1.jpg",
+      name: "Valorant"
     },
     {
-      text: "Fontains in Shadows",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/8.jpg"
-    },
-    {
-      text: "Kites in the Sky",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/9.jpg"
-    },
-    {
-      text: "Sun Streak",
-      image: "https://freakyjolly.com/demo/jquery/PreloadJS/images/10.jpg"
+      url: "https://cod.tracker.gg/",
+      image: "assets/images/games/COD-1.jpg",
+      name:"Call of Duty"
     }
   ]
 }

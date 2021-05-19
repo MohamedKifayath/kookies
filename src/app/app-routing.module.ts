@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GamesComponent } from './components/games/games.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { NftDetailsComponent } from './components/nft-details/nft-details.component';
 import { NftComponent } from './components/nft/nft.component';
 import { StoreComponent } from './components/store/store.component';
 import { LandingComponent } from './landing/landing.component';
@@ -31,6 +32,11 @@ const routes: Routes = [
   {
     path:'games',
     component:GamesComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path:'nftdetails',
+    component:NftDetailsComponent,
     canActivate:[AuthGuard]
   }
 ];

@@ -13,6 +13,7 @@ import { StoreComponent } from './components/store/store.component';
 import { NftComponent } from './components/nft/nft.component';
 import { GamesComponent } from './components/games/games.component';
 import { OwlModule } from 'ngx-owl-carousel';
+import { NftDetailsComponent } from './components/nft-details/nft-details.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     FooterComponent,
     StoreComponent,
     NftComponent,
-    GamesComponent
+    GamesComponent,
+    NftDetailsComponent
   ],
   imports: [
     BrowserModule,

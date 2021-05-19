@@ -1,0 +1,56 @@
+.titleName{
+    font-size: 18px;
+    margin-bottom: 4%;
+    padding-top:4%;
+    color:#373737;
+}
+.titleDesc
+{
+    font-size:28px;
+    margin-bottom: 3%;
+    color:#060a35;
+
+}
+.owned
+{
+    color:#373737;
+    font-size:16px;
+    margin-bottom: 3%;
+}
+.currentprice{
+    padding-left: 10px;
+    font-size: 30px;
+    color: #060a35;
+    padding-top:1%;
+}
+.buynow
+{
+    min-width: 150px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+.price{
+    font-size: 20px;
+    color:#373737;
+}
+.neo
+{
+    margin-top:5%;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: inset 17px 17px 34px #ffffff, 
+                inset -17px -17px 34px #ffffff;
+}
+.productImg
+{
+    width: 95%;
+    border-radius: 20px;
+    padding-top:2%;
+    padding-bottom: 2%;
+    height:100%;
+}
+.pricehistory{
+    font-size:20px;
+    color: #060a35;
+    
+}

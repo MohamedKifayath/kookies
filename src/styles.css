@@ -57,7 +57,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "gilroy";
   font-size: 18px;
   padding: 0;
   margin: 0;
@@ -247,7 +247,7 @@ a:hover {
 
 .section-sub-title {
   font-size: 24px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "gilroy";
   color: #ec038b;
   font-weight: 600;
   margin-bottom: 10px; }
@@ -913,14 +913,14 @@ h6 {
   font-size: 18px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "gilroy";
   color: #ffffff;
   font-weight: 600;
   margin: 0;
   line-height: 1.3; }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "gilroy";
   color: #ffffff;
   font-weight: 600;
   -webkit-transition: all 0.3s;
@@ -940,7 +940,7 @@ p {
 a {
   text-decoration: none;
   display: inline-block;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "gilroy";
   color: #ffffff; }
 
 a:hover {
@@ -2486,7 +2486,7 @@ span.is-active:after {
     background-size: contain;
     background-position: center; }
     .trailer_bg .trailer_head h1 {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "gilroy";
       font-size: 60px;
       font-weight: 600;
       line-height: 1.3;
@@ -2558,7 +2558,7 @@ span.is-active:after {
     .trailer_container .trailer_details .active {
       display: block; }
     .trailer_container .trailer_details h4 {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "gilroy";
       font-size: 36px;
       font-weight: 700;
       text-transform: capitalaize;
@@ -2567,7 +2567,7 @@ span.is-active:after {
     .trailer_container .trailer_details a {
       text-decoration: underline;
       display: inline-block;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "gilroy";
       font-size: 18px;
       font-weight: 400;
       line-height: 1.5;
@@ -2579,7 +2579,7 @@ span.is-active:after {
       left: 28px;
       text-decoration: none;
       display: inline-block;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "gilroy";
       font-size: 18px;
       font-weight: 400;
       line-height: 1.5;
@@ -2594,7 +2594,7 @@ span.is-active:after {
       right: 28px;
       text-decoration: none;
       display: inline-block;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "gilroy";
       font-size: 18px;
       font-weight: 400;
       line-height: 1.5;
@@ -3312,7 +3312,7 @@ span.is-active:after {
         padding-left: 0;
         margin-top: 30px; } }
     .author__content .top-title {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "gilroy";
       font-weight: 600;
       color: #ec038b;
       font-size: 24px;
