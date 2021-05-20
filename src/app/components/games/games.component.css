@@ -109,10 +109,9 @@
   .slide-text{
     display: none;
   }
-  .item:hover .slide-text{
+  .cardAdditional:hover .slide-text{
     display: block;
-    margin-top:8%;
-    margin-left: 30%;
+    margin-left: 23%;
   }
   .slide-text a
   {
@@ -124,9 +123,13 @@
     -o-border-radius: 999px;
     color: #544590;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 20px;
     box-shadow: 0px 10px 9px 0px rgb(26 15 63 / 26%);
     padding: 11px 27px;
+  }
+  .slide-text a:hover{
+    color:#ffffff;
+    background-color: #060a35;
   }
   .card{
     width: 50%;
@@ -185,4 +188,9 @@
     padding-top: 4%;
     color: #fff;
     text-align: center;
+  }
+  .cardAdditional
+  {
+    width:100%;
+    border-radius: 0;
   }

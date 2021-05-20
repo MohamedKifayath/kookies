@@ -38,14 +38,16 @@
                 <!-- Tab panes -->
                 <div class="tab-content tabs">
                     <div role="tabpanel" class="tab-pane fade in active show" id="games">
-                        <owl-carousel [options]="carouselOptions" [items]="allGames" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                            <div class="item" *ngFor="let image of allGames;let i= index">
-                              <img class="slide-image" src="{{image.image}}" >
-                              <div class="slide-text">
-                                  <a href="{{image.text}}">Register</a>
-                              </div>
+                        <div class="row">
+                            <div class="col-4" *ngFor="let image of allGames;let i= index">
+                                <div class="card bg-light text-dark cardAdditional">
+                                    <img class="card-img-top" src="{{image.image}}" alt="Card image cap">
+                                    <div class="card-body slide-text">
+                                        <a href="{{image.text}}" target="_blank" class="">Register</a>
+                                    </div>
+                                </div>
                             </div>
-                        </owl-carousel>
+                        </div>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="mygames">
                         <owl-carousel [options]="carouselOptions" [items]="myGames" [carouselClasses]="['owl-theme', 'row', 'sliding']">

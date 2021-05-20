@@ -61,40 +61,47 @@ export class GamesComponent implements OnInit {
 
   allGames = [
     {
-      text: "https://tracker.gg/",
+      text: "https://tracker.gg/valorant",
       image: "assets/images/games/Valorant-1.jpg"
     },
     {
-      text: "https://tracker.gg/",
+      text: "https://cod.tracker.gg/warzone",
       image: "assets/images/games/COD-1.jpg"
     },
     {
-      text: "https://tracker.gg/",
+      text: "https://battlefieldtracker.com/",
       image: "assets/images/games/Battlefield-1.jpg"
     },
     {
-      text: "https://tracker.gg/",
+      text: "https://apex.tracker.gg/",
       image: "assets/images/games/Apex-legends.jpg"
     },
     {
-      text: "https://tracker.gg/",
-      image: "assets/images/games/Destiny.jpg"
+      text: "https://tracker.gg/csgo",
+      image: "assets/images/games/counter-strike.jpg"
+    },
+    {
+      text: "https://fortnitetracker.com/",
+      image: "assets/images/games/Fortnite.jpg"
+    },
+    {
+      text: "https://pubgtracker.com/",
+      image: "assets/images/games/Pubg.jpg"
+    },
+    {
+      text: "https://r6.tracker.network/",
+      image: "assets/images/games/rainbow.jpg"
     },
     {
       text: "https://tracker.gg/",
-      image: "assets/images/games/Fortnite.jpg"
+      image: "assets/images/games/rocket-league.jpg"
     }
   ]
   myGames = [
     {
-      url: "https://tracker.gg/valorant/",
+      url: "https://tracker.gg/valorant/profile/riot/Batkhan1%232619/overview",
       image: "assets/images/games/Valorant-1.jpg",
       name: "Valorant"
-    },
-    {
-      url: "https://cod.tracker.gg/",
-      image: "assets/images/games/COD-1.jpg",
-      name:"Call of Duty"
     }
   ]
 }

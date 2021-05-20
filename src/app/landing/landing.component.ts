@@ -51,6 +51,8 @@ export class LandingComponent implements OnInit {
 
 
   ngOnInit(): void {
+    $.getScript('assets/js/app.js');
+    window.scrollTo(0, 0);
     if ( sessionStorage.getItem('x-auth')){
       this.router.navigate( ["dashboard"] );
     }
