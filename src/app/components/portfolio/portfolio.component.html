@@ -1,0 +1,201 @@
+<!-- hero section start -->
+<section class="hero bg_img" data-background="assets/images/bg/hero.jpg">
+  <div class="hero__shape">
+    <img src="assets/images/elements/hero/shape-2.png" alt="image">
+  </div>
+  <div class="el-1"><img src="assets/images/elements/hero/el-1.png" alt="image"></div>
+  <div class="el-2"><img src="assets/images/elements/hero/el-2.png" alt="image"></div>
+  <div class="el-3"><img src="assets/images/elements/hero/el-3.png" alt="image"></div>
+  <div class="el-4"><img src="assets/images/elements/hero/el-4.png" alt="image"></div>
+  <div class="el-5"><img src="assets/images/elements/hero/el-5.png" alt="image"></div>
+  <div class="el-6"><img src="assets/images/elements/hero/el-6.png" alt="image"></div>
+  <div class="el-7"><img src="assets/images/elements/hero/el-7.png" alt="image"></div>
+  <div class="el-8"><img src="assets/images/elements/hero/el-8.png" alt="image"></div>
+  <div class="el-9"><img src="assets/images/elements/hero/el-9.png" alt="image"></div>
+  <div class="el-10"><img src="assets/images/elements/hero/el-10.png" alt="image"></div>
+  <div class="el-11"><img src="assets/images/elements/hero/el-11.png" alt="image"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="hero__content">
+          <span class="hero__sub-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">Kookies</span>
+          <h2 class="hero__title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Become a part of the
+            gaming revolution</h2>
+          <!-- <p class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Our games entertain millions of people every day, everywhere</p> -->
+          <!-- <a href="javascript:void(0)" class="cmn-btn wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">play now</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- games-->
+<section class="hero bg_img">
+  <div class="hero__shape">
+    <img src="assets/images/elements/hero/shape-2.png" alt="image">
+  </div>
+  <!-- <div class="el-1"><img src="assets/images/elements/hero/el-1.png" alt="image"></div>
+    <div class="el-2"><img src="assets/images/elements/hero/el-2.png" alt="image"></div>
+    <div class="el-3"><img src="assets/images/elements/hero/el-3.png" alt="image"></div>
+    <div class="el-4"><img src="assets/images/elements/hero/el-4.png" alt="image"></div>
+    <div class="el-5"><img src="assets/images/elements/hero/el-5.png" alt="image"></div>
+    <div class="el-6"><img src="assets/images/elements/hero/el-6.png" alt="image"></div>
+    <div class="el-7"><img src="assets/images/elements/hero/el-7.png" alt="image"></div>
+    <div class="el-8"><img src="assets/images/elements/hero/el-8.png" alt="image"></div>
+    <div class="el-9"><img src="assets/images/elements/hero/el-9.png" alt="image"></div>
+    <div class="el-10"><img src="assets/images/elements/hero/el-10.png" alt="image"></div>
+    <div class="el-11"><img src="assets/images/elements/hero/el-11.png" alt="image"></div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="hero__content">
+          <div class="row">
+            <div class="col-4" *ngFor="let image of allGames;let i= index">
+              <div class="card bg-light text-dark cardAdditional" style="background: transparent !important;">
+                <img class="card-img-top" src="{{image.image}}" alt="Card image cap">
+
+                <p class="">{{image.text}}</p>
+
+              </div>
+            </div>
+          </div>
+          <!-- <span class="hero__sub-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">Kookies</span>
+            <h2 class="hero__title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Become a part of the gaming revolution</h2> -->
+          <!-- <p class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Our games entertain millions of people every day, everywhere</p> -->
+          <!-- <a href="javascript:void(0)" class="cmn-btn wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">play now</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Games -->
+<section class="hero bg_img">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tab" role="tabpanel">
+          <h3 style="text-align: center; margin-bottom: 2%;">Kookies rewards you for playing your favorite video games
+          </h3>
+          <div class="row">
+            <div class="col-4" *ngFor="let image of myGames;let i= index">
+              <div class="card bg-light text-dark cardAdditional" style="background: transparent !important;">
+                <img class="card-img-top" src="{{image.image}}" alt="Card image cap">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero bg_img">
+  <h2 style="margin-bottom: 5%;">Here are our rewards and benefits</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container top">
+          <div class="row flex-nowrap scroll" style="overflow-x: scroll;">
+              <div class="col-4 marginBottom">
+                          <img class="card-img-top" src="assets/images/elements/Trophy.png" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title fontColor">Title</h5>
+                              <a href="javascript:void(0)" class="cmn-btn mt-5">learn more</a>
+                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                          </div>
+              </div>
+              <div class="col-4 marginBottom">
+                  <div class="card bg-light text-dark">
+                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title fontColor">Title</h5>
+                          <div class="row">
+                              <div class="col-6">
+                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
+                              </div>
+                              <div class="col-6">
+                                  <p class="rightContent fontColor">Ξ0.02</p>
+                              </div>
+                          </div>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      </div>
+                  </div>
+              </div>
+              <div class="col-4 marginBottom">
+                  <div class="card bg-light text-dark">
+                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title fontColor">Title</h5>
+                          <div class="row">
+                              <div class="col-6">
+                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
+                              </div>
+                              <div class="col-6">
+                                  <p class="rightContent fontColor">Ξ0.02</p>
+                              </div>
+                          </div>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      </div>
+                  </div>
+              </div>
+              <div class="col-4 marginBottom">
+                  <div class="card bg-light text-dark">
+                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title fontColor">Title</h5>
+                          <div class="row">
+                              <div class="col-6">
+                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
+                              </div>
+                              <div class="col-6">
+                                  <p class="rightContent fontColor">Ξ0.02</p>
+                              </div>
+                          </div>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      </div>
+                  </div>
+              </div>
+              <div class="col-4 marginBottom">
+                  <div class="card bg-light text-dark">
+                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title fontColor">Title</h5>
+                          <div class="row">
+                              <div class="col-6">
+                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
+                              </div>
+                              <div class="col-6">
+                                  <p class="rightContent fontColor">Ξ0.02</p>
+                              </div>
+                          </div>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section bg_img" style="background-position: inherit;" data-background="assets/images/elements/footerBackground.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="subscribe-area">
+          <div class="obj"><img src="assets/images/elements/Footer.png" alt="image"></div>
+          <div class="subscribe-content">
+            <h2 class="title">Register here to get our launch updates </h2>
+            <p>Subscribe to get updated on future game releases</p>
+            <p></p>
+            <form class="subscribe-form">
+              <input type="email" name="subscribe_email" id="subscribe_email" placeholder="Enter Your Email">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

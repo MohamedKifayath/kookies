@@ -1,10 +1,12 @@
 import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CookiesComponent } from './components/cookies/cookies.component';
 import { GamesComponent } from './components/games/games.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NftDetailsComponent } from './components/nft-details/nft-details.component';
 import { NftComponent } from './components/nft/nft.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { StoreComponent } from './components/store/store.component';
 import { LandingComponent } from './landing/landing.component';
 import { AuthGuard } from './_guard/auth.guard';
@@ -12,11 +14,16 @@ import { AuthGuard } from './_guard/auth.guard';
 const routes: Routes = [
   {
     path: '',
-    component: LandingComponent,
+    component: PortfolioComponent,
   },
   {
     path: 'dashboard',
     component: HomepageComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'login',
+    component: LandingComponent,
     canActivate: [AuthGuard]
   },
   {
@@ -38,6 +45,15 @@ const routes: Routes = [
     path:'nftdetails',
     component:NftDetailsComponent,
     canActivate:[AuthGuard]
+  },
+  {
+    path:'cookies',
+    component:CookiesComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path: '**',
+    component: LandingComponent,
   }
 ];
 

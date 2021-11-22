@@ -14,6 +14,8 @@ import { NftComponent } from './components/nft/nft.component';
 import { GamesComponent } from './components/games/games.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { NftDetailsComponent } from './components/nft-details/nft-details.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { NftDetailsComponent } from './components/nft-details/nft-details.compon
     StoreComponent,
     NftComponent,
     GamesComponent,
-    NftDetailsComponent
+    NftDetailsComponent,
+    CookiesComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
