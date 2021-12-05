@@ -18,11 +18,13 @@
     <div class="row">
       <div class="col-lg-8">
         <div class="hero__content">
-          <span class="hero__sub-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">Kookies</span>
-          <h2 class="hero__title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Become a part of the
-            gaming revolution</h2>
+          <span class="hero__sub-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">Become a part
+            of</span>
+          <h2 class="hero__title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"> The gaming revolution
+          </h2>
+
           <!-- <p class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Our games entertain millions of people every day, everywhere</p> -->
-          <!-- <a href="javascript:void(0)" class="cmn-btn wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">play now</a> -->
+          <a href="#subscribe" class="cmn-btn wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">Subscribe</a>
         </div>
       </div>
     </div>
@@ -30,7 +32,12 @@
 </section>
 
 <!-- games-->
-<section class="hero bg_img">
+<section class=" pb-120 position-relative overflow-hidden">
+  <div class="about-obj-1" data-paroller-factor="-0.08" data-paroller-type="foreground"
+    data-paroller-direction="horizontal"><img src="assets/images/elements/about-obj-1.png" alt="image"></div>
+  <div class="about-obj-2" data-paroller-factor="0.08" data-paroller-type="foreground"
+    data-paroller-direction="horizontal"><img src="assets/images/elements/about-obj-2.png" alt="image"></div>
+
   <div class="hero__shape">
     <img src="assets/images/elements/hero/shape-2.png" alt="image">
   </div>
@@ -52,10 +59,22 @@
           <div class="row">
             <div class="col-4" *ngFor="let image of allGames;let i= index">
               <div class="card bg-light text-dark cardAdditional" style="background: transparent !important;">
-                <img class="card-img-top" src="{{image.image}}" alt="Card image cap">
+                <div class="about-thumb">
+                  <img class="card-img-top image-1" src="{{image.image}}" alt="Card image cap">
+                  <img src="assets/images/elements/about-phone.png" alt="image" class="image-2">
+                </div>
 
-                <p class="">{{image.text}}</p>
+                <p class="" style="text-align: center;">{{image.text}}</p>
 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 offset-sm-4">
+              <div class="card bg-light text-dark cardAdditional" style="background: transparent !important;">
+                <img class="card-img-top" src="assets/images/Logo-White.png" alt="Card image cap">
+                <h1 class="card-title text-center fontColor">Kookies </h1>
+                <h3 class="card-title text-center fontColor"> Right platform for you</h3>
               </div>
             </div>
           </div>
@@ -69,19 +88,34 @@
   </div>
 </section>
 
+<section class="pt-120 pb-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="section-header text-center has--bg">
+          <div class="header-image"><img src="assets/images/elements/header-el.png" alt="image"></div>
+          <h3 class="section-title">Kookies rewards you for playing your favorite video games</h3>
+        </div>
+      </div>
+    </div><!-- row end -->
+  </div>
+</section>
 <!--Games -->
-<section class="hero bg_img">
+<section class=" pb-120 position-relative overflow-hidden">
+  <div class="about-obj-1" data-paroller-factor="-0.08" data-paroller-type="foreground"
+    data-paroller-direction="horizontal"><img src="assets/images/elements/about-obj-1.png" alt="image"></div>
+  <div class="about-obj-2" data-paroller-factor="0.08" data-paroller-type="foreground"
+    data-paroller-direction="horizontal"><img src="assets/images/elements/about-obj-2.png" alt="image"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="tab" role="tabpanel">
-          <h3 style="text-align: center; margin-bottom: 2%;">Kookies rewards you for playing your favorite video games
-          </h3>
           <div class="row">
-            <div class="col-4" *ngFor="let image of myGames;let i= index">
-              <div class="card bg-light text-dark cardAdditional" style="background: transparent !important;">
-                <img class="card-img-top" src="{{image.image}}" alt="Card image cap">
-              </div>
+            <div class="col-4" style="margin-top: 1.5%;" *ngFor="let image of myGames;let i= index">
+              <!-- <div class="card bg-light text-dark cardAdditional" style="background: transparent !important;">
+              </div> -->
+              <img class="card-img-top" src="{{image.image}}" alt="Card image cap">
+
             </div>
           </div>
         </div>
@@ -89,97 +123,46 @@
     </div>
   </div>
 </section>
-<section class="hero bg_img">
-  <h2 style="margin-bottom: 5%;">Here are our rewards and benefits</h2>
+<section class="pt-120 pb-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="section-header text-center has--bg">
+          <div class="header-image"><img src="assets/images/elements/header-el.png" alt="image"></div>
+          <h3 class="section-title">Here are our rewards and benefits</h3>
+        </div>
+      </div>
+    </div><!-- row end -->
+  </div>
+</section>
+<section>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="container top">
-          <div class="row flex-nowrap scroll" style="overflow-x: scroll;">
-              <div class="col-4 marginBottom">
-                          <img class="card-img-top" src="assets/images/elements/Trophy.png" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 class="card-title fontColor">Title</h5>
-                              <a href="javascript:void(0)" class="cmn-btn mt-5">learn more</a>
-                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                          </div>
+          <owl-carousel [options]="SlideOptions" [items]="benefits" [carouselClasses]="['owl-theme', 'sliding']">
+            <div class="marginBottom" *ngFor="let item of benefits;let i= index">
+              <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 style="text-align: center;" class="card-title fontColor">{{item.title}}
+                </h5>
+                <a href="javascript:void(0)" (click)="show(item.id)" class="cmn-btn mt-5">learn more</a>
               </div>
-              <div class="col-4 marginBottom">
-                  <div class="card bg-light text-dark">
-                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
-                      <div class="card-body">
-                          <h5 class="card-title fontColor">Title</h5>
-                          <div class="row">
-                              <div class="col-6">
-                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
-                              </div>
-                              <div class="col-6">
-                                  <p class="rightContent fontColor">Ξ0.02</p>
-                              </div>
-                          </div>
-                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      </div>
-                  </div>
-              </div>
-              <div class="col-4 marginBottom">
-                  <div class="card bg-light text-dark">
-                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
-                      <div class="card-body">
-                          <h5 class="card-title fontColor">Title</h5>
-                          <div class="row">
-                              <div class="col-6">
-                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
-                              </div>
-                              <div class="col-6">
-                                  <p class="rightContent fontColor">Ξ0.02</p>
-                              </div>
-                          </div>
-                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      </div>
-                  </div>
-              </div>
-              <div class="col-4 marginBottom">
-                  <div class="card bg-light text-dark">
-                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
-                      <div class="card-body">
-                          <h5 class="card-title fontColor">Title</h5>
-                          <div class="row">
-                              <div class="col-6">
-                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
-                              </div>
-                              <div class="col-6">
-                                  <p class="rightContent fontColor">Ξ0.02</p>
-                              </div>
-                          </div>
-                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      </div>
-                  </div>
-              </div>
-              <div class="col-4 marginBottom">
-                  <div class="card bg-light text-dark">
-                      <img class="card-img-top" src="https://lh3.googleusercontent.com/sVtiK670NUpwOD6RHHYslYo80OzdE4n8umlHtY0Eh3mEy-n6M4DZHwsMBeKilcWLF4Vs20-fCz2zXN72RMgl7L6iL0_L7LPoVYFHN_o=s349" alt="Card image cap">
-                      <div class="card-body">
-                          <h5 class="card-title fontColor">Title</h5>
-                          <div class="row">
-                              <div class="col-6">
-                                  <p class ="description" style="color: #363636;">Another Way - Medieval, Fantasy, Digital ART</p>
-                              </div>
-                              <div class="col-6">
-                                  <p class="rightContent fontColor">Ξ0.02</p>
-                              </div>
-                          </div>
-                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+            </div>
+          </owl-carousel>
+
+          <!-- <div class="row flex-nowrap scroll" style="overflow-x: scroll;">
+           
+            
+          </div> -->
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer-section bg_img" style="background-position: inherit;" data-background="assets/images/elements/footerBackground.png">
+<footer id="subscribe" class="footer-section bg_img" style="background-position: inherit;"
+  data-background="assets/images/elements/footerBackground.png">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -189,13 +172,74 @@
             <h2 class="title">Register here to get our launch updates </h2>
             <p>Subscribe to get updated on future game releases</p>
             <p></p>
-            <form class="subscribe-form">
-              <input type="email" name="subscribe_email" id="subscribe_email" placeholder="Enter Your Email">
-              <button type="submit">Subscribe</button>
+            <form class="subscribe-form" #userlogin="ngForm" (ngSubmit)="subscribe(userlogin)">
+              <input type="email" name="email" id="subscribe_email" placeholder="Enter Your Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #email="ngModel" ngModel required email>
+              <button type="submit" value="submit">Subscribe</button>
+              <div *ngIf="email.touched">
+                <p *ngIf="email.errors?.required">Email is a required field!</p>
+                <p *ngIf="email.errors?.pattern">This is not a valid Email!!!</p>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <div class="row footer-top2">
+      <h3>Disclaimer</h3>
+      <p>Kookies isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone
+        officially involved in
+        producing or managing League of Legends and or Valorant. League of Legends, Valorant and Riot Games are
+        trademarks or
+        registered trademarks of Riot Games, Inc. League of Legends, Valorant © Riot Games, Inc.</p>
+
+    </div>
+    <div class="row footer-bottom align-items-center">
+      <div class="col-lg-7 col-md-6 text-md-left text-center">
+        <p class="copy-right-text">Copyright © 2021.All Rights Reserved By <a href="https://massbunk.in/">Massbunk</a>
+        </p>
+      </div>
+      <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
+        <ul class="social-links justify-content-md-end justify-content-center">
+          <li><a href="#0"><i class="lab la-facebook-f"></i></a></li>
+          <li><a href="#0"><i class="lab la-twitter"></i></a></li>
+          <li><a href="#0"><i class="lab la-pinterest-p"></i></a></li>
+          <li><a href="#0"><i class="lab la-google-plus"></i></a></li>
+          <li><a href="#0"><i class="lab la-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
+<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body">
+    <div class="container">
+      <div class="card">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-header text-center has--bg">
+              <div class="header-image" style="display: inline; text-align: right;">
+                <img style="justify-content: right;align-items: inherit;height: 220px; margin-bottom: 2%;"
+                  src="{{image}}" alt="image">
+              </div>
+            </div>
+            <h5 class="" style="width: 75%; padding: 2%;">{{description}}</h5>
+          </div>
+        </div><!-- row end -->
+        <!-- <div class="row">
+                  <div class="col-12">
+                      <p class="mygameTitle">{{title}}</p>
+                  </div>
+                  <div class="col-6 button">
+                      <a href="{{description}}" target="_blank"class="cmn-btn">View Stats</a>
+                  </div>
+                  <div class="col-6 button">
+                      <a href="javascript:void(0);" class="cmn-btn">Tournament</a>
+                  </div>
+              </div> -->
+        <div class="footer"><a href="javascript:void(0)" (click)="hide()">Close</a></div>
+      </div>
+    </div>
+  </div>
+</div>
